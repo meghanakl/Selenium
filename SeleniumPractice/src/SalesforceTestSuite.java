@@ -17,7 +17,6 @@ public class SalesforceTestSuite {
 		driver.findElement(By.id("username")).sendKeys("hello");
 		driver.findElement(By.name("pw")).sendKeys("65768");
 		driver.findElement(By.id("loginbutton")).click();
-
 	}
 
 }
