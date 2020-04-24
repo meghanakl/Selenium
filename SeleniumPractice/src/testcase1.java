@@ -8,10 +8,13 @@ public class testcase1 {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\MeghanaRao\\Chrome\\chromedriver_win32\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://login.facebook.com/");
+		driver.get("https://login.salesforce.com/");
+		System.out.println("Succesfully open the salesforce page");
+		driver.manage().window().maximize();
 		driver.findElement(By.id("username")).sendKeys("hello");
 		driver.findElement(By.name("pw")).sendKeys("65768");
-		
+		driver.findElement(By.id("loginbutton")).click();
+		 
 	}
 
 }
