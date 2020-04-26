@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SalesforceTestSuite {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) //driver version give as an argument
 	{
 		String driverVersion = args[0];
 		String path = System.getProperty("user.dir");
