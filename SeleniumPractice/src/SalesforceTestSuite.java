@@ -6,9 +6,10 @@ public class SalesforceTestSuite {
 
 	public static void main(String[] args) 
 	{
+		String driverversion = args[0];
 		String path = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver",
-				path+"/src/drivers/80/chromedriver.exe");
+				path+"/src/drivers/"+driverversion+"/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://login.salesforce.com/");
@@ -18,5 +19,5 @@ public class SalesforceTestSuite {
 		driver.findElement(By.name("pw")).sendKeys("65768");
 		driver.findElement(By.id("loginbutton")).click();
 	}
-
+ 
 }
