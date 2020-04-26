@@ -6,10 +6,10 @@ public class SalesforceTestSuite {
 
 	public static void main(String[] args) 
 	{
-		String driverversion = args[0];
+		String driverVersion = args[0];
 		String path = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver",
-				path+"/src/drivers/"+driverversion+"/chromedriver.exe");
+				path+"/src/drivers/"+driverVersion+"/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://login.salesforce.com/");
